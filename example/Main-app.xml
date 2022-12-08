@@ -4,4 +4,6 @@
     <filename>Main</filename>
     <name>Main</name>
     <versionNumber>0.0.8</versionNumber>
-  
+    <extensions>
+        <extensionID>com.tuarua.FreSharp</extensionID>
+        <extensionID>com.tuar
