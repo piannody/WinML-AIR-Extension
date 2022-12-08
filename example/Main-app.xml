@@ -6,4 +6,7 @@
     <versionNumber>0.0.8</versionNumber>
     <extensions>
         <extensionID>com.tuarua.FreSharp</extensionID>
-        <extensionID>com.tuar
+        <extensionID>com.tuarua.MLANE</extensionID>
+    </extensions>
+    <initialWindow>
+        <content>SWF file name i
