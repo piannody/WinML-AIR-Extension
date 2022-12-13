@@ -1,3 +1,7 @@
 package {
 import com.tuarua.FreSharp;
-i
+import com.tuarua.MLANE;
+import com.tuarua.MLEvent;
+import com.tuarua.fre.ANEError;
+
+import flash.desktop.NativeApplicat
