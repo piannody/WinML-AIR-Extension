@@ -19,4 +19,7 @@ import flash.text.Font;
 import flash.text.TextField;
 import flash.text.TextFormat;
 
-i
+import views.SimpleButton;
+
+[SWF(width="700", height="700", frameRate="60", backgroundColor="#FFFFFF")]
+public class Main extends 
