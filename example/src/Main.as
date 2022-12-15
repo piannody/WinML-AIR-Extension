@@ -22,4 +22,6 @@ import flash.text.TextFormat;
 import views.SimpleButton;
 
 [SWF(width="700", height="700", frameRate="60", backgroundColor="#FFFFFF")]
-public class Main extends 
+public class Main extends Sprite {
+    private var freSharpANE:FreSharp = new FreSharp();//must create before all others
+    [Embed(sourc
