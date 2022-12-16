@@ -27,4 +27,6 @@ public class Main extends Sprite {
     [Embed(source="cat.jpg")]
     public static const TestImage:Class;
 
-    public static const FONT:Font = new FiraSansSem
+    public static const FONT:Font = new FiraSansSemiBold();
+    private var btnZip:SimpleButton = new SimpleButton("Detect Image");
+    private var statusLabe
