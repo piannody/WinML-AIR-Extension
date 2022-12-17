@@ -29,4 +29,6 @@ public class Main extends Sprite {
 
     public static const FONT:Font = new FiraSansSemiBold();
     private var btnZip:SimpleButton = new SimpleButton("Detect Image");
-    private var statusLabe
+    private var statusLabel:TextField = new TextField();
+    private var ane:MLANE = new MLANE();
+    private var testImage:Bitmap 
