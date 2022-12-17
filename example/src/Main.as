@@ -37,4 +37,6 @@ public class Main extends Sprite {
         stage.align = StageAlign.TOP_LEFT;
         stage.scaleMode = StageScaleMode.NO_SCALE;
 
-        NativeApplication.nativeApplication.add
+        NativeApplication.nativeApplication.addEventListener(Event.EXITING, onExiting);
+        testImage.y = 50;
+        addChild(testImage)
