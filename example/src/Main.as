@@ -31,4 +31,8 @@ public class Main extends Sprite {
     private var btnZip:SimpleButton = new SimpleButton("Detect Image");
     private var statusLabel:TextField = new TextField();
     private var ane:MLANE = new MLANE();
-    private var testImage:Bitmap 
+    private var testImage:Bitmap = new TestImage() as Bitmap;
+
+    public function Main() {
+        stage.align = StageAlign.TOP_LEFT;
+   
