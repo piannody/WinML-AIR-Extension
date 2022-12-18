@@ -43,4 +43,6 @@ public class Main extends Sprite {
         ane.addEventListener(MLEvent.RESULT, onANEEvent);
         ane.init();
 
-        btnZip.x = (stage.stageWidth -
+        btnZip.x = (stage.stageWidth - 200) * 0.5;
+        btnZip.y = 10;
+        btnZip.addEventListener(MouseEvent.CLICK, onZipClick
