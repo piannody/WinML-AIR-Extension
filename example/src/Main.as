@@ -50,3 +50,7 @@ public class Main extends Sprite {
 
         var tf:TextFormat = new TextFormat(Main.FONT.fontName, 13, 0x222222);
         tf.align = "center";
+
+        statusLabel.defaultTextFormat = tf;
+        statusLabel.width = stage.stageWidth;
+        statusLabel.y = btnZip.y + 5
