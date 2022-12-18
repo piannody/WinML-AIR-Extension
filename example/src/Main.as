@@ -39,4 +39,8 @@ public class Main extends Sprite {
 
         NativeApplication.nativeApplication.addEventListener(Event.EXITING, onExiting);
         testImage.y = 50;
-        addChild(testImage)
+        addChild(testImage);
+        ane.addEventListener(MLEvent.RESULT, onANEEvent);
+        ane.init();
+
+        btnZip.x = (stage.stageWidth -
