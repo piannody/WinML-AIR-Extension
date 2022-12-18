@@ -45,4 +45,8 @@ public class Main extends Sprite {
 
         btnZip.x = (stage.stageWidth - 200) * 0.5;
         btnZip.y = 10;
-        btnZip.addEventListener(MouseEvent.CLICK, onZipClick
+        btnZip.addEventListener(MouseEvent.CLICK, onZipClick);
+        addChild(btnZip);
+
+        var tf:TextFormat = new TextFormat(Main.FONT.fontName, 13, 0x222222);
+        tf.align = "center";
