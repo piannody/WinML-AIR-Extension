@@ -53,4 +53,8 @@ public class Main extends Sprite {
 
         statusLabel.defaultTextFormat = tf;
         statusLabel.width = stage.stageWidth;
-        statusLabel.y = btnZip.y + 5
+        statusLabel.y = btnZip.y + 50;
+
+        statusLabel.wordWrap = statusLabel.multiline = false;
+        statusLabel.selectable = false;
+       
