@@ -59,4 +59,10 @@ public class Main extends Sprite {
         statusLabel.selectable = false;
         statusLabel.embedFonts = true;
         statusLabel.antiAliasType = AntiAliasType.ADVANCED;
-        statu
+        statusLabel.sharpness = -100;
+
+        addChild(statusLabel);
+
+    }
+
+    private function onZipClick(event:MouseEv
