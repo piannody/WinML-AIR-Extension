@@ -57,4 +57,6 @@ public class Main extends Sprite {
 
         statusLabel.wordWrap = statusLabel.multiline = false;
         statusLabel.selectable = false;
-       
+        statusLabel.embedFonts = true;
+        statusLabel.antiAliasType = AntiAliasType.ADVANCED;
+        statu
