@@ -68,4 +68,5 @@ public class Main extends Sprite {
     private function onZipClick(event:MouseEvent):void {
         statusLabel.text = "Analyzing image...";
         try {
-            ane.predict(File.ap
+            ane.predict(File.applicationDirectory.resolvePath("cat.jpg").nativePath,
+                    File.applicationDirect
