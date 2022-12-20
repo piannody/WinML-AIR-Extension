@@ -65,4 +65,7 @@ public class Main extends Sprite {
 
     }
 
-    private function onZipClick(event:MouseEv
+    private function onZipClick(event:MouseEvent):void {
+        statusLabel.text = "Analyzing image...";
+        try {
+            ane.predict(File.ap
