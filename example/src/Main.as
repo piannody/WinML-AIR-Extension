@@ -72,4 +72,9 @@ public class Main extends Sprite {
                     File.applicationDirectory.resolvePath("SqueezeNet.onnx").nativePath);
         } catch (e:ANEError) {
             trace(e);
-           
+            trace(e.message);
+            trace(e.getStackTrace());
+        }
+    }
+
+    private function onANEEvent(event:ML
