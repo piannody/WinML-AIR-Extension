@@ -77,4 +77,9 @@ public class Main extends Sprite {
         }
     }
 
-    private function onANEEvent(event:ML
+    private function onANEEvent(event:MLEvent):void {
+        statusLabel.text = event.params;
+    }
+
+    private function onExiting(event:Event):void {
+        ane.dis
