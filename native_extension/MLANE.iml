@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="Flex" version="4">
-  <component name="FlexBuildConfigurationMa
+  <component name="FlexBuildConfigurationManager" active="MLANE">
+    <configurations>
+      <configuration name="MLANE" target-platform="Desktop" pure-a
