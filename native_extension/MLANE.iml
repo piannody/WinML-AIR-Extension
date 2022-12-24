@@ -2,4 +2,5 @@
 <module type="Flex" version="4">
   <component name="FlexBuildConfigurationManager" active="MLANE">
     <configurations>
-      <configuration name="MLANE" target-platform="Desktop" pure-a
+      <configuration name="MLANE" target-platform="Desktop" pure-as="true" output-type="Library" output-file="MLANE.swc" output-folder="$MODULE_DIR$/bin">
+        <depe
