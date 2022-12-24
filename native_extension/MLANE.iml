@@ -6,4 +6,6 @@
         <dependencies target-player="27.0">
           <sdk name="AIRSDK_32" />
         </dependencies>
-        <compiler-o
+        <compiler-options>
+          <option name="additionalOptions" value="-swf-version=30" />
+        </compiler-optio
