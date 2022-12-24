@@ -3,4 +3,7 @@
   <component name="FlexBuildConfigurationManager" active="MLANE">
     <configurations>
       <configuration name="MLANE" target-platform="Desktop" pure-as="true" output-type="Library" output-file="MLANE.swc" output-folder="$MODULE_DIR$/bin">
-        <depe
+        <dependencies target-player="27.0">
+          <sdk name="AIRSDK_32" />
+        </dependencies>
+        <compiler-o
