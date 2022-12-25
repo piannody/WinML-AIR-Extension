@@ -8,4 +8,9 @@
         </dependencies>
         <compiler-options>
           <option name="additionalOptions" value="-swf-version=30" />
-        </compiler-optio
+        </compiler-options>
+        <packaging-air-desktop />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+    </configu
