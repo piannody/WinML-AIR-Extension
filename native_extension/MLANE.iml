@@ -13,4 +13,7 @@
         <packaging-android />
         <packaging-ios />
       </configuration>
-    </configu
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-comp
