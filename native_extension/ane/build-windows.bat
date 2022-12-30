@@ -11,4 +11,6 @@ SET projectName=MLANE
 REM Setup the directory.
 echo Making directories.
 
-IF NOT E
+IF NOT EXIST %pathtome%platforms mkdir %pathtome%platforms
+IF NOT EXIST %pathtome%platforms\win  %pathtome%platforms\win
+IF N
