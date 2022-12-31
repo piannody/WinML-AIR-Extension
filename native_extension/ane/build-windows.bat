@@ -13,4 +13,5 @@ echo Making directories.
 
 IF NOT EXIST %pathtome%platforms mkdir %pathtome%platforms
 IF NOT EXIST %pathtome%platforms\win  %pathtome%platforms\win
-IF N
+IF NOT EXIST %pathtome%platforms\win\x86  %pathtome%platforms\win\x86
+IF NOT EXIST %pathtome%platforms\win\x86\release mkdir %pathtome%platforms
