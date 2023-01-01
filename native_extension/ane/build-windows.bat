@@ -19,4 +19,8 @@ IF NOT EXIST %pathtome%platforms\win\x64  %pathtome%platforms\win\x64
 IF NOT EXIST %pathtome%platforms\win\x64\release mkdir %pathtome%platforms\win\x64\release
 
 REM Copy SWC into place.
-echo Copying SW
+echo Copying SWC into place.
+echo %pathtome%..\bin\%projectName%.swc
+copy %pathtome%..\bin\%projectName%.swc %pathtome%
+
+REM contents of SW
