@@ -23,4 +23,7 @@ echo Copying SWC into place.
 echo %pathtome%..\bin\%projectName%.swc
 copy %pathtome%..\bin\%projectName%.swc %pathtome%
 
-REM contents of SW
+REM contents of SWC.
+echo Extracting files form SWC.
+echo %pathtome%%projectName%.swc
+copy %pathtome%%projectName%.swc 
