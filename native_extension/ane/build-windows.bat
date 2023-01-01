@@ -26,4 +26,7 @@ copy %pathtome%..\bin\%projectName%.swc %pathtome%
 REM contents of SWC.
 echo Extracting files form SWC.
 echo %pathtome%%projectName%.swc
-copy %pathtome%%projectName%.swc 
+copy %pathtome%%projectName%.swc %pathtome%%projectName%Extract.swc
+ren %pathtome%%projectName%Extract.swc %projectName%Extract.zip
+
+call %SZIP% e %pathtome%%pro
