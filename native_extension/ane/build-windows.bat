@@ -36,4 +36,7 @@ del %pathtome%%projectName%Extract.zip
 REM Copy library.swf to folders.
 echo Copying library.swf into place.
 copy %pathtome%library.swf %pathtome%platforms\win\x86\release
-copy 
+copy %pathtome%library.swf %pathtome%platforms\win\x64\release
+
+REM Copy native libraries into place.
+echo Copying na
