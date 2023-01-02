@@ -39,4 +39,6 @@ copy %pathtome%library.swf %pathtome%platforms\win\x86\release
 copy %pathtome%library.swf %pathtome%platforms\win\x64\release
 
 REM Copy native libraries into place.
-echo Copying na
+echo Copying native libraries into place.
+
+copy %pathtome%..\..\native_library\win\%projectName%\x86\Release\%projectName%.dll %path
