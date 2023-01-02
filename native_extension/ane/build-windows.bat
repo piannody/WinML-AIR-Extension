@@ -29,4 +29,9 @@ echo %pathtome%%projectName%.swc
 copy %pathtome%%projectName%.swc %pathtome%%projectName%Extract.swc
 ren %pathtome%%projectName%Extract.swc %projectName%Extract.zip
 
-call %SZIP% e %pathtome%%pro
+call %SZIP% e %pathtome%%projectName%Extract.zip -o%pathtome%
+
+del %pathtome%%projectName%Extract.zip
+
+REM Copy library.swf to folders.
+echo
