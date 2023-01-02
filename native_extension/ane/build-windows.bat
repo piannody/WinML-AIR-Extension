@@ -34,4 +34,6 @@ call %SZIP% e %pathtome%%projectName%Extract.zip -o%pathtome%
 del %pathtome%%projectName%Extract.zip
 
 REM Copy library.swf to folders.
-echo
+echo Copying library.swf into place.
+copy %pathtome%library.swf %pathtome%platforms\win\x86\release
+copy 
