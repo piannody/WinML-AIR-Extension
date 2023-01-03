@@ -42,4 +42,6 @@ REM Copy native libraries into place.
 echo Copying native libraries into place.
 
 copy %pathtome%..\..\native_library\win\%projectName%\x86\Release\%projectName%.dll %pathtome%platforms\win\x86\release
-copy %pathtome%..\..\native_library\win\%projectName%\x64\Release\%projectName%.dll %pathtome%platform
+copy %pathtome%..\..\native_library\win\%projectName%\x64\Release\%projectName%.dll %pathtome%platforms\win\x64\release
+
+copy %pathtome%..\..\native_library\win\%projectName%\x86\Release\%projectName%Lib.dll %pathtome%pl
