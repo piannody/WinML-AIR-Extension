@@ -48,4 +48,8 @@ copy %pathtome%..\..\native_library\win\%projectName%\x86\Release\%projectName%L
 copy %pathtome%..\..\native_library\win\%projectName%\x64\Release\%projectName%Lib.dll %pathtome%platforms\win\x64\release
 
 copy %pathtome%..\..\native_library\win\%projectName%\x86\Release\Newtonsoft.Json.dll %pathtome%platforms\win\x86\release
-copy %pathtome%..\..\native_library\win\%projectName%\x64\Release\Newtonsoft.Json.dl
+copy %pathtome%..\..\native_library\win\%projectName%\x64\Release\Newtonsoft.Json.dll %pathtome%platforms\win\x64\release
+
+REM Run the build command.
+echo Building Release.
+call %AIR_PATH%adt.bat -package -targ
