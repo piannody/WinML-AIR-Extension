@@ -52,4 +52,5 @@ copy %pathtome%..\..\native_library\win\%projectName%\x64\Release\Newtonsoft.Jso
 
 REM Run the build command.
 echo Building Release.
-call %AIR_PATH%adt.bat -package -targ
+call %AIR_PATH%adt.bat -package -target ane %pathtome%%projectName%.ane %pathtome%extension_win.xml -swc %pathtome%%projectName%.swc ^
+-platform Window
