@@ -58,4 +58,6 @@ call %AIR_PATH%adt.bat -package -target ane %pathtome%%projectName%.ane %pathtom
 
 call DEL /F /Q /A %pathtome%platforms\win\x86\release\Newtonsoft.Json.dll
 call DEL /F /Q /A %pathtome%platforms\win\x86\release\%projectName%.dll
-call DEL /F /Q /A %pathtome%platforms\win\x86\release\
+call DEL /F /Q /A %pathtome%platforms\win\x86\release\%projectName%Lib.dll
+call DEL /F /Q /A %pathtome%platforms\win\x86\release\library.swf
+call DEL /F /Q /A %pathtome%pla
