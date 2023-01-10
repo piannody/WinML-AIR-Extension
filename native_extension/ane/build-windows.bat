@@ -66,3 +66,7 @@ call DEL /F /Q /A %pathtome%platforms\win\x64\release\Newtonsoft.Json.dll
 
 call DEL /F /Q /A %pathtome%platforms\win\x64\release\library.swf
 call DEL /F /Q /A %pathtome%%projectName%.swc
+call DEL /F /Q /A %pathtome%library.swf
+call DEL /F /Q /A %pathtome%catalog.xml
+
+echo FIN
