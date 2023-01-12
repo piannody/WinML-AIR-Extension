@@ -13,4 +13,6 @@
             </applicationDeployment>
         </platform>
         <platform name="Windows-x86-64">
-            
+            <applicationDeployment>
+                <nativeLibrary>MLANE.dll</nativeLibrary>
+                <initializer>TRCML
