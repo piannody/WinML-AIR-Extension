@@ -10,3 +10,7 @@
                 <nativeLibrary>MLANE.dll</nativeLibrary>
                 <initializer>TRCMLExtInizer</initializer>
                 <finalizer>TRCMLExtFinizer</finalizer>
+            </applicationDeployment>
+        </platform>
+        <platform name="Windows-x86-64">
+            
