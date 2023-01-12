@@ -8,4 +8,5 @@
         <platform name="Windows-x86">
             <applicationDeployment>
                 <nativeLibrary>MLANE.dll</nativeLibrary>
-     
+                <initializer>TRCMLExtInizer</initializer>
+                <finalizer>TRCMLExtFinizer</finalizer>
