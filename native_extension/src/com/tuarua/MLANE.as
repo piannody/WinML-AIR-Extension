@@ -1,3 +1,7 @@
 package com.tuarua {
 import com.tuarua.fre.ANEError;
-import flash
+import flash.events.EventDispatcher;
+import flash.events.StatusEvent;
+import flash.external.ExtensionContext;
+
+public clas
