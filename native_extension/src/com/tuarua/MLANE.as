@@ -9,4 +9,6 @@ public class MLANE extends EventDispatcher {
     private var ctx:ExtensionContext;
     private static const TRACE:String = "TRACE";
     public function MLANE() {
-        trace("
+        trace("[" + NAME + "] Initializing ANE...");
+        try {
+            ctx = ExtensionContext.createExtensionContex
