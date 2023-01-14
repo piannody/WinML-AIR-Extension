@@ -13,3 +13,7 @@ public class MLANE extends EventDispatcher {
         try {
             ctx = ExtensionContext.createExtensionContext("com.tuarua." + NAME, null);
             ctx.addEventListener(StatusEvent.STATUS, gotEvent);
+        } catch (e:Error) {
+            trace(e.name);
+            trace(e.message);
+            trace(e.getStackTrace(
