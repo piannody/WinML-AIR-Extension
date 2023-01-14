@@ -11,4 +11,5 @@ public class MLANE extends EventDispatcher {
     public function MLANE() {
         trace("[" + NAME + "] Initializing ANE...");
         try {
-            ctx = ExtensionContext.createExtensionContex
+            ctx = ExtensionContext.createExtensionContext("com.tuarua." + NAME, null);
+            ctx.addEventListener(StatusEvent.STATUS, gotEvent);
