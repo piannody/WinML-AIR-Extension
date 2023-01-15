@@ -16,4 +16,7 @@ public class MLANE extends EventDispatcher {
         } catch (e:Error) {
             trace(e.name);
             trace(e.message);
-            trace(e.getStackTrace(
+            trace(e.getStackTrace());
+            trace(e.errorID);
+            trace("[" + NAME + "] ANE Not loaded properly.  Future calls will fail.");
+     
