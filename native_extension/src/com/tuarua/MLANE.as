@@ -19,4 +19,9 @@ public class MLANE extends EventDispatcher {
             trace(e.getStackTrace());
             trace(e.errorID);
             trace("[" + NAME + "] ANE Not loaded properly.  Future calls will fail.");
-     
+        }
+    }
+
+    private function gotEvent(event:StatusEvent):void {
+        switch (event.level) {
+   
