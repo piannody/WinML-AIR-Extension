@@ -27,4 +27,9 @@ public class MLANE extends EventDispatcher {
             case TRACE:
                 trace("[" + NAME + "]", event.code);
                 break;
-            case MLEvent.
+            case MLEvent.RESULT:
+                dispatchEvent(new MLEvent(event.level, event.code));
+                break;
+        }
+    }
+
