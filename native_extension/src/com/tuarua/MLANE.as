@@ -24,4 +24,7 @@ public class MLANE extends EventDispatcher {
 
     private function gotEvent(event:StatusEvent):void {
         switch (event.level) {
-   
+            case TRACE:
+                trace("[" + NAME + "]", event.code);
+                break;
+            case MLEvent.
