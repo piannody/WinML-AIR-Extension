@@ -34,4 +34,8 @@ public class MLANE extends EventDispatcher {
     }
 
     public function predict(imagePath:String, modelPath:String):void {
-        var theRet:* = ctx.call("
+        var theRet:* = ctx.call("predict", imagePath, modelPath);
+        if (theRet is ANEError) {
+            throw theRet as ANEError;
+        }
+    
