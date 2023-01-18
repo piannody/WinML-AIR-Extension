@@ -43,4 +43,11 @@ public class MLANE extends EventDispatcher {
     public function init():void {
         var theRet:* = ctx.call("init");
         if (theRet is ANEError) {
-       
+            throw theRet as ANEError;
+        }
+    }
+
+
+    public function dispose():void {
+        if (!ctx) {
+            trace("[
