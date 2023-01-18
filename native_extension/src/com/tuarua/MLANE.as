@@ -38,4 +38,9 @@ public class MLANE extends EventDispatcher {
         if (theRet is ANEError) {
             throw theRet as ANEError;
         }
-    
+    }
+
+    public function init():void {
+        var theRet:* = ctx.call("init");
+        if (theRet is ANEError) {
+       
