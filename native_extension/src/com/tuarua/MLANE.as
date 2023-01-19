@@ -50,4 +50,7 @@ public class MLANE extends EventDispatcher {
 
     public function dispose():void {
         if (!ctx) {
-            trace("[
+            trace("[" + NAME + "] Error. ANE Already in a disposed or failed state...");
+            return;
+        }
+        trace("[" + NAME 
