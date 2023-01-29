@@ -56,4 +56,9 @@ public class MLANE extends EventDispatcher {
         trace("[" + NAME + "] Unloading ANE...");
         ctx.removeEventListener(StatusEvent.STATUS, gotEvent);
         ctx.dispose();
-      
+        ctx = null;
+    }
+
+
+}
+}
