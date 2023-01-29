@@ -53,4 +53,7 @@ public class MLANE extends EventDispatcher {
             trace("[" + NAME + "] Error. ANE Already in a disposed or failed state...");
             return;
         }
-        trace("[" + NAME 
+        trace("[" + NAME + "] Unloading ANE...");
+        ctx.removeEventListener(StatusEvent.STATUS, gotEvent);
+        ctx.dispose();
+      
