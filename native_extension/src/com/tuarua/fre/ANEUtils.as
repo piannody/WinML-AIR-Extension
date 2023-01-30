@@ -93,3 +93,77 @@ public class ANEUtils {
     public function getClassProps(clz:*):Vector.<Object> {
         return _getClassProps(clz);
     }
+
+    private static function getPropClass(name:String, cls:Class):Class {
+        var clsProps:Vector.<Object> = getClassProps(cls);
+        for each (var clsa:Object in clsProps) {
+            if (clsa.name == name) {
+                return clsa.cls;
+            }
+        }
+        return null;
+    }
+
+    public static function map(from:Object, to:Class):Object {
+        var classInstance:Object;
+        classInstance = new to();
+        for (var id:String in from) {
+            var name:String = id;
+            var propCls:Class;
+            if (from[name] is String) {
+                propCls = String;
+            } else if (from[name] is Boolean) {
+                propCls = Boolean;
+            } else if (from[name] is int) {
+                propCls = int;
+            } else if (from[name] is Number) {
+                propCls = Number;
+            } else {
+                propCls = getPropClass(name, to);
+            }
+
+            switch (propCls) {
+                case String:
+                case int:
+                case Number:
+                case Boolean:
+                case Array:
+                case Vector.<String>:
+                case Vector.<int>:
+                case Vector.<Number>:
+                case Vector.<Boolean>:
+                    if (classInstance.hasOwnProperty(name)) classInstance[name] = from[name];
+                    break;
+                case Date:
+                    if (classInstance.hasOwnProperty(name)) classInstance[name] = new Date(Date.parse(from[name]));
+                    break;
+                default: //Object or Class or Vector.<Class>
+                    // handle Vector.<Class>
+                    if (propCls && propCls.toString().indexOf("Vector.") > -1) {
+                        var vec:* = new propCls();
+                        var vecClsName:String = propCls.toString().replace("[class Vector.<","").replace(">]","");
+                        var vecCls:Class = getClass(Class(getDefinitionByName(vecClsName)));
+                        for each(var o:* in from[name]) {
+                            vec.push(map(o, vecCls));
+                        }
+                        if (classInstance.hasOwnProperty(name)) classInstance[name] = vec;
+                    } else {
+                        if (classInstance.hasOwnProperty(name)) classInstance[name] = (propCls == null) ? from[name] : map(from[name], getPropClass(name, to));
+                    }
+                    break;
+            }
+
+        }
+        return classInstance;
+    }
+
+    public static function getClassType(clz:*):String {
+        return getQualifiedClassName(clz);
+    }
+
+    public function getClassType(clz:*):String {
+        return getQualifiedClassName(clz);
+    }
+
+}
+}
