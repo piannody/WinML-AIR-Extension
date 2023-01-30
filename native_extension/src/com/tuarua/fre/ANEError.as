@@ -70,3 +70,36 @@ public class ANEError extends Error {
         _source = source;
         _type = type;
         super(message, getErrorID(_type));
+    }
+
+    override public function get errorID():int {
+        return super.errorID;
+    }
+
+    override public function getStackTrace():String {
+        return _stackTrace;
+    }
+
+    private function getErrorID(thetype:String):int {
+        var val:int;
+        if (Capabilities.os.toLowerCase().indexOf("win") == 0) {
+            val = errorTypesCSharp.indexOf(thetype);
+        } else if (Capabilities.os.toLowerCase().indexOf("linux") == 0) {
+            val = errorTypesKotlin.indexOf(thetype);
+        } else {
+            val = errorTypesSwift.indexOf(thetype);
+        }
+        if (val == -1) val = 10;
+        return val;
+    }
+
+    public function get type():String {
+        return _type;
+    }
+
+    public function get source():String {
+        return _source;
+    }
+
+}
+}
