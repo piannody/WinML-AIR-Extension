@@ -9,3 +9,6 @@ namespace FreSharpBridge {
 		// ReSharper disable once CppCStyleCast
 		Marshal::FreeHGlobal(FREObjectCLR((void*)chars));
 	}
+
+	array<FREObjectCLR>^ MarshalFREArray(array<FREObject>^ argv, uint32_t argc) {
+		auto arr = gcnew a
