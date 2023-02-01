@@ -22,4 +22,11 @@ namespace FreSharpBridge {
 		std::vector<std::string> ret;
 		auto mArray = ManagedGlobals::controller->GetFunctions();
 		for (auto i = 0; i < mArray->Length; ++i) {
-			std::string itemStr = ""
+			std::string itemStr = "";
+			MarshalString(mArray[i], itemStr);
+			ret.push_back(itemStr);
+		}
+		return ret;
+	}
+
+	FREObject CallSharpFunction(Strin
