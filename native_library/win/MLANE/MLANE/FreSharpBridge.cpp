@@ -20,4 +20,6 @@ namespace FreSharpBridge {
 
 	std::vector<std::string> GetFunctions() {
 		std::vector<std::string> ret;
-		auto mArray = ManagedGlobal
+		auto mArray = ManagedGlobals::controller->GetFunctions();
+		for (auto i = 0; i < mArray->Length; ++i) {
+			std::string itemStr = ""
