@@ -16,4 +16,8 @@ namespace FreSharpBridge {
 			arr[i] = FREObjectCLR(argv[i]);
 		}
 		return arr;
-	
+	}
+
+	std::vector<std::string> GetFunctions() {
+		std::vector<std::string> ret;
+		auto mArray = ManagedGlobal
