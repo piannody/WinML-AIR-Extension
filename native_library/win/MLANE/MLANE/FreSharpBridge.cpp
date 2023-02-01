@@ -11,4 +11,9 @@ namespace FreSharpBridge {
 	}
 
 	array<FREObjectCLR>^ MarshalFREArray(array<FREObject>^ argv, uint32_t argc) {
-		auto arr = gcnew a
+		auto arr = gcnew array<FREObjectCLR>(argc);
+		for (uint32_t i = 0; i < argc; i++) {
+			arr[i] = FREObjectCLR(argv[i]);
+		}
+		return arr;
+	
