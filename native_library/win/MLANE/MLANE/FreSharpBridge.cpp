@@ -34,4 +34,8 @@ namespace FreSharpBridge {
 			name, FREContextCLR(context), argc, MarshalFREArray(argv, argc)));
 	}
 
-	void SetFREContext(FRE
+	void SetFREContext(FREContext freContext) {
+		ManagedGlobals::controller->SetFreContext(FREContextCLR(freContext));
+	}
+
+	void InitCo
