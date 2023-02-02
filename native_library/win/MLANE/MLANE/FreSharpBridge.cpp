@@ -30,4 +30,8 @@ namespace FreSharpBridge {
 	}
 
 	FREObject CallSharpFunction(String^ name, FREContext context, array<FREObject>^ argv, uint32_t argc) {
-		return static_cast<FREObject>(ManagedGlobals::controller
+		return static_cast<FREObject>(ManagedGlobals::controller->CallSharpFunction(
+			name, FREContextCLR(context), argc, MarshalFREArray(argv, argc)));
+	}
+
+	void SetFREContext(FRE
