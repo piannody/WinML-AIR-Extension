@@ -38,4 +38,8 @@ namespace FreSharpBridge {
 		ManagedGlobals::controller->SetFreContext(FREContextCLR(freContext));
 	}
 
-	void InitCo
+	void InitController() {
+		ManagedGlobals::controller = gcnew FreNamespace::MainController();
+	}
+
+	FreNamespace::MainController ^
