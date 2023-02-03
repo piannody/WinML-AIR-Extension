@@ -42,4 +42,12 @@ namespace FreSharpBridge {
 		ManagedGlobals::controller = gcnew FreNamespace::MainController();
 	}
 
-	FreNamespace::MainController ^
+	FreNamespace::MainController ^ GetController() {
+		return ManagedGlobals::controller;
+	}
+
+}
+
+extern "C" {
+
+	array<FREObject>^ getArgv
