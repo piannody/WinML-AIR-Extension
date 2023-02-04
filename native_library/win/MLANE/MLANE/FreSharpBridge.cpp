@@ -50,4 +50,6 @@ namespace FreSharpBridge {
 
 extern "C" {
 
-	array<FREObject>^ getArgv
+	array<FREObject>^ getArgvAsArray(FREObject argv[], const uint32_t argc) {
+		auto arr = gcnew array<FREObject>(argc);
+		for (uint32_t i = 0; i < argc;
