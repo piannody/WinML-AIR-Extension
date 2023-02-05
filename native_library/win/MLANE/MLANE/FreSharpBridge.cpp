@@ -52,4 +52,11 @@ extern "C" {
 
 	array<FREObject>^ getArgvAsArray(FREObject argv[], const uint32_t argc) {
 		auto arr = gcnew array<FREObject>(argc);
-		for (uint32_t i = 0; i < argc;
+		for (uint32_t i = 0; i < argc; i++) {
+			arr[i] = argv[i];
+		}
+		return arr;
+	}
+
+	FRE_FUNCTION(callSharpFunction) {
+		auto fName 
