@@ -60,4 +60,6 @@ extern "C" {
 
 	FRE_FUNCTION(callSharpFunction) {
 		auto fName = std::string(static_cast<const char*>(functionData));
-		return FreSharpBridge::CallSharpFunction(gcnew System::
+		return FreSharpBridge::CallSharpFunction(gcnew System::String(fName.c_str()), context, getArgvAsArray(argv, argc), argc);
+	}
+}
