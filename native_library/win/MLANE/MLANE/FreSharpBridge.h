@@ -14,4 +14,7 @@ namespace FreSharpBridge {
 	using FREArgvSharp = array<FREObjectCLR>^;
 	public ref class ManagedGlobals {
 	public:
-		static FreNames
+		static FreNamespace::MainController^ controller = nullptr;
+	};
+	void MarshalString(String ^ s, std::string& os);
+	array<FREObject
