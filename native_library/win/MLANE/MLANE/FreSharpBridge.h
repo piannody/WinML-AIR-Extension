@@ -8,4 +8,7 @@ namespace FreSharpBridge {
 	using namespace Windows;
 	using namespace Interop;
 	using namespace Windows::Media;
-	using 
+	using namespace Collections::Generic;
+	using FREObjectCLR = IntPtr;
+	using FREContextCLR = IntPtr;
+	using FREArgvShar
