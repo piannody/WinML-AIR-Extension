@@ -17,4 +17,6 @@ namespace FreSharpBridge {
 		static FreNamespace::MainController^ controller = nullptr;
 	};
 	void MarshalString(String ^ s, std::string& os);
-	array<FREObject
+	array<FREObjectCLR>^ MarshalFREArray(array<FREObject>^ argv, uint32_t argc);
+	std::vector<std::string> GetFunctions();
+	FREObj
