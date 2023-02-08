@@ -11,4 +11,7 @@ namespace FreSharpBridge {
 	using namespace Collections::Generic;
 	using FREObjectCLR = IntPtr;
 	using FREContextCLR = IntPtr;
-	using FREArgvShar
+	using FREArgvSharp = array<FREObjectCLR>^;
+	public ref class ManagedGlobals {
+	public:
+		static FreNames
