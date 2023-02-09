@@ -20,4 +20,9 @@ namespace FreSharpBridge {
 	array<FREObjectCLR>^ MarshalFREArray(array<FREObject>^ argv, uint32_t argc);
 	std::vector<std::string> GetFunctions();
 	FREObject CallSharpFunction(String^ name, FREContext context, array<FREObject>^ argv, uint32_t argc);
-	void SetFREContext
+	void SetFREContext(FREContext freContext);
+	void InitController();
+	FreNamespace::MainController^ GetController();
+}
+extern "C" {
+#
