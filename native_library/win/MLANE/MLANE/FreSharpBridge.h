@@ -19,4 +19,5 @@ namespace FreSharpBridge {
 	void MarshalString(String ^ s, std::string& os);
 	array<FREObjectCLR>^ MarshalFREArray(array<FREObject>^ argv, uint32_t argc);
 	std::vector<std::string> GetFunctions();
-	FREObj
+	FREObject CallSharpFunction(String^ name, FREContext context, array<FREObject>^ argv, uint32_t argc);
+	void SetFREContext
