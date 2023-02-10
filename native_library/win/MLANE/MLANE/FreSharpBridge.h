@@ -25,4 +25,6 @@ namespace FreSharpBridge {
 	FreNamespace::MainController^ GetController();
 }
 extern "C" {
-#
+#define FRE_FUNCTION(fn) FREObject (fn)(FREContext context, void* functionData, uint32_t argc, FREObject argv[])
+
+	ar
