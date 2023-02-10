@@ -27,4 +27,7 @@ namespace FreSharpBridge {
 extern "C" {
 #define FRE_FUNCTION(fn) FREObject (fn)(FREContext context, void* functionData, uint32_t argc, FREObject argv[])
 
-	ar
+	array<FREObject>^ getArgvAsArray(FREObject argv[], uint32_t argc);
+	FRE_FUNCTION(callSharpFunction);
+
+}
