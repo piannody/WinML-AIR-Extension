@@ -18,4 +18,8 @@ prefix##_contextFinalizer(nullCTX); \
 #endif
 
 #ifndef CONTEXT_FIN
-#define CONTEXT_FIN(prefix) void (prefix##_contextFinalizer) (FRE
+#define CONTEXT_FIN(prefix) void (prefix##_contextFinalizer) (FREContext ctx)
+#endif
+
+#ifndef EXTENSION_INIT	
+#define EXTENSION_INIT(prefix) void (prefix##ExtInizer) (v
