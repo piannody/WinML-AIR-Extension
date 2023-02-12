@@ -22,4 +22,5 @@ prefix##_contextFinalizer(nullCTX); \
 #endif
 
 #ifndef EXTENSION_INIT	
-#define EXTENSION_INIT(prefix) void (prefix##ExtInizer) (v
+#define EXTENSION_INIT(prefix) void (prefix##ExtInizer) (void **extData, FREContextInitializer *ctxInitializer, FREContextFinalizer *ctxFinalizer) { \
+*ctxInitializer =
