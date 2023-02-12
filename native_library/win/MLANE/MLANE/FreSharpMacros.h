@@ -13,4 +13,9 @@
 #ifndef EXTENSION_FIN
 #define EXTENSION_FIN(prefix) void (prefix##ExtFinizer) (void *extData) { \
 FREContext nullCTX = 0; \
-prefix##_contextFinalizer(nullCTX)
+prefix##_contextFinalizer(nullCTX); \
+}
+#endif
+
+#ifndef CONTEXT_FIN
+#define CONTEXT_FIN(prefix) void (prefix##_contextFinalizer) (FRE
