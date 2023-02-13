@@ -34,4 +34,7 @@ prefix##_contextFinalizer(nullCTX); \
 #endif
 
 #ifndef FREBRIDGE_INIT
-#define FREBRIDGE_IN
+#define FREBRIDGE_INIT FreSharpBridge::InitController(); \
+FreSharpBridge::SetFREContext(ctx); \
+FreSharpBridge::GetFunctions();
+#endi
