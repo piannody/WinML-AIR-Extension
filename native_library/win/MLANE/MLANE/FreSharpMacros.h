@@ -30,3 +30,8 @@ prefix##_contextFinalizer(nullCTX); \
 
 #ifndef SET_FUNCTIONS
 #define SET_FUNCTIONS *numFunctionsToSet = sizeof( extensionFunctions ) / sizeof( FRENamedFunction ); \
+*functionsToSet = extensionFunctions;
+#endif
+
+#ifndef FREBRIDGE_INIT
+#define FREBRIDGE_IN
