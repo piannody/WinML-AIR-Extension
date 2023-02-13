@@ -29,4 +29,4 @@ prefix##_contextFinalizer(nullCTX); \
 #endif
 
 #ifndef SET_FUNCTIONS
-#d
+#define SET_FUNCTIONS *numFunctionsToSet = sizeof( extensionFunctions ) / sizeof( FRENamedFunction ); \
