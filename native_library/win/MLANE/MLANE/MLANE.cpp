@@ -9,4 +9,11 @@ extern "C" {
 		/******* MAKE SURE TO ADD FUNCTIONS HERE THE SAME AS MAINCONTROLLER.CS *****/
 		/**************************************************************************/
 
-		static FRE
+		static FRENamedFunction extensionFunctions[] = {
+			 MAP_FUNCTION(init)
+			,MAP_FUNCTION(predict)
+		};
+
+		SET_FUNCTIONS
+	}
+
