@@ -6,4 +6,7 @@ extern "C" {
 		FREBRIDGE_INIT
 
 		/**************************************************************************/
-		/******* MAKE SURE TO ADD FUNCTIONS HERE THE SAME AS MAINCONTROL
+		/******* MAKE SURE TO ADD FUNCTIONS HERE THE SAME AS MAINCONTROLLER.CS *****/
+		/**************************************************************************/
+
+		static FRE
