@@ -21,3 +21,7 @@ extern "C" {
 		FreSharpBridge::GetController()->OnFinalize();
 	}
 	EXTENSION_INIT(TRCML)
+	EXTENSION_FIN(TRCML)
+
+}
+
