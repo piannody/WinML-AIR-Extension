@@ -17,3 +17,7 @@ extern "C" {
 		SET_FUNCTIONS
 	}
 
+	CONTEXT_FIN(TRCML) {
+		FreSharpBridge::GetController()->OnFinalize();
+	}
+	EXTENSION_INIT(TRCML)
