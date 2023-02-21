@@ -23,4 +23,6 @@
     <ProjectGuid>{7082DC6C-1222-4351-9159-C1022D1D646E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>MLANE</RootNamespace>
-    <TargetFrameworkV
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    
