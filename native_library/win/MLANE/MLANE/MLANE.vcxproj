@@ -86,4 +86,7 @@
     <OutDir>$(SolutionDir)x64\$(Configuration)\</OutDir>
     <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win3
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)x86\$(Configuration)\</OutDir>
+    <IntD
