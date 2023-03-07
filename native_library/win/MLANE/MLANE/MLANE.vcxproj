@@ -82,4 +82,6 @@
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LinkIncremental>true</LinkIncre
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)x64\$(Configuration)\</OutDir>
+    <PostBuildEventUseInBuild>false</Post
