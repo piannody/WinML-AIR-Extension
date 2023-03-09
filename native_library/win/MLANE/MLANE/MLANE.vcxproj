@@ -106,4 +106,5 @@
       <AdditionalIncludeDirectories>D:\dev\sdks\AIR\AIRSDK_32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>D:\dev\sdks\AIR\AIRSDK_32\lib\win;%(AdditionalLibraryDi
