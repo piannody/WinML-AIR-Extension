@@ -107,4 +107,5 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalLibraryDirectories>D:\dev\sdks\AIR\AIRSDK_32\lib\win;%(AdditionalLibraryDi
+      <AdditionalLibraryDirectories>D:\dev\sdks\AIR\AIRSDK_32\lib\win;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>FlashRuntimeExtensions.lib
