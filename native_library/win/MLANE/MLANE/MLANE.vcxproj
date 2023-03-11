@@ -114,4 +114,6 @@
       <Command>$(ProjectDir)..\..\..\..\native_extension\ane\build-windows.bat</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDef
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
