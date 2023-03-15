@@ -127,4 +127,5 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalLibr
+      <AdditionalLibraryDirectories>D:\dev\sdks\AIR\AIRSDK_32\lib\win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <A
