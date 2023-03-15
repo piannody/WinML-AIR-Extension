@@ -129,4 +129,7 @@
       <SubSystem>Windows</SubSystem>
       <AdditionalLibraryDirectories>D:\dev\sdks\AIR\AIRSDK_32\lib\win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>FlashRuntimeExtensions.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Lin
+    </Link>
+    <PostBuildEvent>
+      <Command>$(ProjectDir)..\..\..\..\native_extension\ane\build-windows.bat</Command>
+ 
