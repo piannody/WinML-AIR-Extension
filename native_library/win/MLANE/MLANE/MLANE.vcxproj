@@ -153,4 +153,5 @@
       <AdditionalDependencies>FlashRuntimeExtensions.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
- 
+      <Command>$(ProjectDir)..\..\..\..\native_extension\ane\build-windows.bat</Command>
+    </PostBuildE
