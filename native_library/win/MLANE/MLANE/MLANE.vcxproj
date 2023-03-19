@@ -154,4 +154,6 @@
     </Link>
     <PostBuildEvent>
       <Command>$(ProjectDir)..\..\..\..\native_extension\ane\build-windows.bat</Command>
-    </PostBuildE
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Pl
