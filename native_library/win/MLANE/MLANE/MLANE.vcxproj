@@ -170,4 +170,6 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <E
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Additiona
