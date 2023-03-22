@@ -172,4 +172,4 @@
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <Additiona
+      <AdditionalLibraryDirectories>D:\dev\sdks\AIR\AIRSDK_32\lib\win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirec
