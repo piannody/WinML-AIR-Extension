@@ -172,4 +172,7 @@
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>D:\dev\sdks\AIR\AIRSDK_32\lib\win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirec
+      <AdditionalLibraryDirectories>D:\dev\sdks\AIR\AIRSDK_32\lib\win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>FlashRuntimeExtensions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+ 
