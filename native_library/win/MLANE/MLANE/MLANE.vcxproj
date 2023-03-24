@@ -180,4 +180,6 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\..\sdks\AIR\AIR
+    <ClInclude Include="..\..\..\..\..\..\..\sdks\AIR\AIRSDK_30\include\FlashRuntimeExtensions.h" />
+    <ClInclude Include="FreNamespace.h" />
+    <ClInclude Include="FreSharpBridge.h"
