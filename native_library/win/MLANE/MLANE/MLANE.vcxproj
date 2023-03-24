@@ -182,4 +182,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\..\..\sdks\AIR\AIRSDK_30\include\FlashRuntimeExtensions.h" />
     <ClInclude Include="FreNamespace.h" />
-    <ClInclude Include="FreSharpBridge.h"
+    <ClInclude Include="FreSharpBridge.h" />
+    <ClInclude Include="FreSharpMacros.h" />
+    <ClInclude Include="MLANE.h" />
+    <ClInclude Include="std
