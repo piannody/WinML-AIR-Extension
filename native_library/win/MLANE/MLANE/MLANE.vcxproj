@@ -177,4 +177,7 @@
     </Link>
     <PostBuildEvent>
       <Command>$(ProjectDir)..\..\..\..\native_extension\ane\build-windows.bat</Command>
-    
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\sdks\AIR\AIR
