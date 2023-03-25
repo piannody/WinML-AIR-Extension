@@ -189,4 +189,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FreSharpBridge.cpp" />
-    <ClCompile Include="MLANE.c
+    <ClCompile Include="MLANE.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="FreSharp">
+      <HintPath>..\packages\TuaRua.FreSharp.2.4.0\Fre
