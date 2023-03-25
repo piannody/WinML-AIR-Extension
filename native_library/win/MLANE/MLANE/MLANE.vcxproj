@@ -185,4 +185,8 @@
     <ClInclude Include="FreSharpBridge.h" />
     <ClInclude Include="FreSharpMacros.h" />
     <ClInclude Include="MLANE.h" />
-    <ClInclude Include="std
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FreSharpBridge.cpp" />
+    <ClCompile Include="MLANE.c
