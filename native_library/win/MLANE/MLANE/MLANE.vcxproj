@@ -196,4 +196,6 @@
       <HintPath>..\packages\TuaRua.FreSharp.2.4.0\FreSharp\$(PlatformTarget)\FreSharp.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
- 
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+  </Ite
