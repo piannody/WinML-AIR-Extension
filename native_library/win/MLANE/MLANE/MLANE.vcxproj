@@ -198,4 +198,7 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
-  </Ite
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MLANELib\MLANELib.csproj">
+      <Project>{71ced144-e
