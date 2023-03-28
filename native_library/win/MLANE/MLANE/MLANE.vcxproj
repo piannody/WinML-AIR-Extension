@@ -201,4 +201,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MLANELib\MLANELib.csproj">
-      <Project>{71ced144-e
+      <Project>{71ced144-ed05-4414-9744-e359ac074b0e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTarget
