@@ -204,4 +204,7 @@
       <Project>{71ced144-ed05-4414-9744-e359ac074b0e}</Project>
     </ProjectReference>
   </ItemGroup>
-  <Import Project="$(VCTarget
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
