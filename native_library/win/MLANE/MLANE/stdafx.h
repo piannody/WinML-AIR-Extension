@@ -12,4 +12,5 @@
 #endif
 
 #ifndef _WIN32_WINNT		// Allow use of features specific to Windows NT 4 or later.
-#define _W
+#define _WIN32_WINNT 0x0400		// Change this to the appropriate value to target Windows 98 and Windows 2000 or later.
+#endif						
