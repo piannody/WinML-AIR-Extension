@@ -23,4 +23,9 @@
 #define _WIN32_IE 0x0400	// Change this to the appropriate value to target IE 5.0 or later.
 #endif
 
-#define WIN32_LEAN_AND_MEAN		// Exclude rarely-used stuff from Windows h
+#define WIN32_LEAN_AND_MEAN		// Exclude rarely-used stuff from Windows headers
+// Windows Header Files:
+#include <windows.h>
+
+// C RunTime Header Files
+#include <stdlib.
