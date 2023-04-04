@@ -6,4 +6,8 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MLANE", "MLANE\MLANE.vcxproj", "{7082DC6C-1222-4351-9159-C1022D1D646E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLANELib", "MLANELib\MLANELib.csproj", "{71CED144-ED05-4414-9744-E359AC074B0E}"
-EndProjec
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = De
