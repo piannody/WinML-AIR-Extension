@@ -17,4 +17,5 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7082DC6C-1222-
+		{7082DC6C-1222-4351-9159-C1022D1D646E}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{7082DC6C-1222-4351-9159-C1022D1D646E}.Debug|x64.Act
