@@ -9,4 +9,9 @@ using Windows.Storage;
 using MLANELib.WinML;
 using TuaRua.FreSharp;
 using TuaRua.FreSharp.Exceptions;
-using FREObject 
+using FREObject = System.IntPtr;
+using FREContext = System.IntPtr;
+
+#pragma warning disable 4014
+
+namespace ML
