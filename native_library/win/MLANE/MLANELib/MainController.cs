@@ -14,4 +14,7 @@ using FREContext = System.IntPtr;
 
 #pragma warning disable 4014
 
-namespace ML
+namespace MLANELib {
+    public interface IMachineLearningInput { }
+
+    public class MainController : FreSharpMai
