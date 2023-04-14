@@ -17,4 +17,8 @@ using FREContext = System.IntPtr;
 namespace MLANELib {
     public interface IMachineLearningInput { }
 
-    public class MainController : FreSharpMai
+    public class MainController : FreSharpMainController {
+        private SqueezeNetModel _model;
+        private const string Result = "MLANE.OnModelResult";
+
+    
