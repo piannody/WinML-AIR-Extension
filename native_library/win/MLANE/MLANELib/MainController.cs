@@ -21,4 +21,6 @@ namespace MLANELib {
         private SqueezeNetModel _model;
         private const string Result = "MLANE.OnModelResult";
 
-    
+        // Must have this function. It exposes the methods to our entry C++.
+        public string[] GetFunctions() {
+   
