@@ -31,4 +31,7 @@ namespace MLANELib {
             return FunctionsDict.Select(kvp => kvp.Key).ToArray();
         }
 
-        private FREObject Predict(F
+        private FREObject Predict(FREContext ctx, uint argc, FREObject[] argv) {
+            if (argv[0] == FREObject.Zero) {
+                return FREObject.Zero;
+  
