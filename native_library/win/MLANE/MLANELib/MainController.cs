@@ -28,3 +28,7 @@ namespace MLANELib {
                     {"init", InitController},
                     {"predict", Predict}
                 };
+            return FunctionsDict.Select(kvp => kvp.Key).ToArray();
+        }
+
+        private FREObject Predict(F
