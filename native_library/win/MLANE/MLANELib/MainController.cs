@@ -24,4 +24,7 @@ namespace MLANELib {
         // Must have this function. It exposes the methods to our entry C++.
         public string[] GetFunctions() {
             FunctionsDict =
-                new Dictionary<string, Func<FREObject, uint, FREObject[], FRE
+                new Dictionary<string, Func<FREObject, uint, FREObject[], FREObject>> {
+                    {"init", InitController},
+                    {"predict", Predict}
+                };
