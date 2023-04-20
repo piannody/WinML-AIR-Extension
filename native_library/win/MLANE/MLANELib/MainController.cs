@@ -43,4 +43,7 @@ namespace MLANELib {
             var imagePath = argv[0].AsString();
             var modelPath = argv[1].AsString();
             try {
- 
+                EvaluateImageAsync(imagePath, modelPath);
+            }
+            catch (Exception e) {
+          
