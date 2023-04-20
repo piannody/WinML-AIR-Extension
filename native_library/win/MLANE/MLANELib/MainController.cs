@@ -34,4 +34,8 @@ namespace MLANELib {
         private FREObject Predict(FREContext ctx, uint argc, FREObject[] argv) {
             if (argv[0] == FREObject.Zero) {
                 return FREObject.Zero;
-  
+            }
+
+            if (argv[1] == FREObject.Zero) {
+                return FREObject.Zero;
+            
