@@ -38,4 +38,9 @@ namespace MLANELib {
 
             if (argv[1] == FREObject.Zero) {
                 return FREObject.Zero;
-            
+            }
+
+            var imagePath = argv[0].AsString();
+            var modelPath = argv[1].AsString();
+            try {
+ 
