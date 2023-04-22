@@ -46,4 +46,7 @@ namespace MLANELib {
                 EvaluateImageAsync(imagePath, modelPath);
             }
             catch (Exception e) {
-          
+                return new FreException(e).RawValue;
+            }
+
+            return FREObject.Zero;
