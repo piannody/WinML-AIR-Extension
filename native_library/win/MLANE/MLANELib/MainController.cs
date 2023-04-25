@@ -50,3 +50,7 @@ namespace MLANELib {
             }
 
             return FREObject.Zero;
+        }
+
+        private async Task EvaluateImageAsync(string imagePath, string modelPath) {
+            
