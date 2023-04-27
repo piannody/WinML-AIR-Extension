@@ -55,3 +55,5 @@ namespace MLANELib {
         private async Task EvaluateImageAsync(string imagePath, string modelPath) {
             var selectedStorageFile = await StorageFile.GetFileFromPathAsync(imagePath);
             SoftwareBitmap softwareBitmap;
+            using (var stream = await selectedStorageFile.OpenAsync(FileAccessMode.Read)) {
+        
