@@ -56,4 +56,5 @@ namespace MLANELib {
             var selectedStorageFile = await StorageFile.GetFileFromPathAsync(imagePath);
             SoftwareBitmap softwareBitmap;
             using (var stream = await selectedStorageFile.OpenAsync(FileAccessMode.Read)) {
-        
+                // Create the decoder from the stream 
+                var decoder = await BitmapDecoder.CreateAsync(s
