@@ -57,4 +57,6 @@ namespace MLANELib {
             SoftwareBitmap softwareBitmap;
             using (var stream = await selectedStorageFile.OpenAsync(FileAccessMode.Read)) {
                 // Create the decoder from the stream 
-                var decoder = await BitmapDecoder.CreateAsync(s
+                var decoder = await BitmapDecoder.CreateAsync(stream);
+                // Get the SoftwareBitmap representation of the file in BGRA8 format
+                soft
