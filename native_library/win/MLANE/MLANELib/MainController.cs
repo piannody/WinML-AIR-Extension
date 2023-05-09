@@ -68,4 +68,5 @@ namespace MLANELib {
             var inputImage = VideoFrame.CreateWithSoftwareBitmap(softwareBitmap);
 
             if (_model == null) {
-               
+                var modelFile = await StorageFile.GetFileFromPathAsync(modelPath);
+                _model = new Squeeze
