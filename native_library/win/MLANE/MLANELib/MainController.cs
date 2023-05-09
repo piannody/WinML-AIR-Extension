@@ -60,4 +60,5 @@ namespace MLANELib {
                 var decoder = await BitmapDecoder.CreateAsync(stream);
                 // Get the SoftwareBitmap representation of the file in BGRA8 format
                 softwareBitmap = await decoder.GetSoftwareBitmapAsync();
-                softwareBitmap = SoftwareBitmap.Conv
+                softwareBitmap = SoftwareBitmap.Convert(softwareBitmap, BitmapPixelFormat.Bgra8,
+                    BitmapAlphaMode.Premultiplied);
