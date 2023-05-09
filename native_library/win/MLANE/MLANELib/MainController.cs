@@ -70,4 +70,5 @@ namespace MLANELib {
             if (_model == null) {
                 var modelFile = await StorageFile.GetFileFromPathAsync(modelPath);
                 _model = new SqueezeNetModel {LearningModel = await LearningModel.LoadFromStorageFileAsync(modelFile)};
-                _model.Se
+                _model.Session = new LearningModelSession(_model.LearningModel,
+                    new LearningModelDevice(Lear
