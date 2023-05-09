@@ -65,4 +65,7 @@ namespace MLANELib {
             }
 
             // Encapsulate the image within a VideoFrame to be bound and evaluated
-            var i
+            var inputImage = VideoFrame.CreateWithSoftwareBitmap(softwareBitmap);
+
+            if (_model == null) {
+               
