@@ -62,3 +62,7 @@ namespace MLANELib {
                 softwareBitmap = await decoder.GetSoftwareBitmapAsync();
                 softwareBitmap = SoftwareBitmap.Convert(softwareBitmap, BitmapPixelFormat.Bgra8,
                     BitmapAlphaMode.Premultiplied);
+            }
+
+            // Encapsulate the image within a VideoFrame to be bound and evaluated
+            var i
