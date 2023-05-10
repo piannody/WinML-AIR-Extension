@@ -79,4 +79,8 @@ namespace MLANELib {
                 return;
             }
 
-            var input = new Squee
+            var input = new SqueezeNetInput {
+                Image = ImageFeatureValue.CreateFromVideoFrame(inputImage)
+            };
+
+    
