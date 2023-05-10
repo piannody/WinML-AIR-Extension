@@ -75,4 +75,8 @@ namespace MLANELib {
                 _model.Binding = new LearningModelBinding(_model.Session);
             }
 
-   
+            if (_model == null) {
+                return;
+            }
+
+            var input = new Squee
