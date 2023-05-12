@@ -83,4 +83,6 @@ namespace MLANELib {
                 Image = ImageFeatureValue.CreateFromVideoFrame(inputImage)
             };
 
-    
+            try {
+                var output = (SqueezeNetOutput) await _model.EvaluateAsync(input);
+  
