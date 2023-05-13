@@ -85,4 +85,5 @@ namespace MLANELib {
 
             try {
                 var output = (SqueezeNetOutput) await _model.EvaluateAsync(input);
-  
+                var (label, probability) = output.classLabelProbs.FirstOrDefault();
+                Disp
