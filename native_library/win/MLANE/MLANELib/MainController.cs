@@ -97,4 +97,8 @@ namespace MLANELib {
             return FREObject.Zero;
         }
 
-        public override void OnFinalize(
+        public override void OnFinalize() { }
+
+        public override string TAG => "MainController";
+    }
+}
