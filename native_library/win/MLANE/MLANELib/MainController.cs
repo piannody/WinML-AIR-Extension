@@ -93,4 +93,8 @@ namespace MLANELib {
             }
         }
 
-        private FREObject InitController(FRECon
+        private FREObject InitController(FREContext ctx, uint argc, FREObject[] argv) {
+            return FREObject.Zero;
+        }
+
+        public override void OnFinalize(
