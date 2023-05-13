@@ -89,4 +89,8 @@ namespace MLANELib {
                 DispatchEvent(Result, probability + ", " + label);
             }
             catch (Exception ex) {
-                Trace(ex.Me
+                Trace(ex.Message, ex.StackTrace);
+            }
+        }
+
+        private FREObject InitController(FRECon
