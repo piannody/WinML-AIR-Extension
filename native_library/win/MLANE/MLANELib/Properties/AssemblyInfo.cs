@@ -7,4 +7,6 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("HelloWorldANELib")]
 [assembly: AssemblyDescription("")]
-[
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("HelloWorldANELib")]
