@@ -3,4 +3,7 @@ using Windows.AI.MachineLearning;
 
 namespace MLANELib.WinML {
     public interface IMachineLearningModel {
-        LearningModel Lear
+        LearningModel LearningModel { get; set; }
+
+        LearningModelSession Session { get; set; }
+        LearningModelBin
