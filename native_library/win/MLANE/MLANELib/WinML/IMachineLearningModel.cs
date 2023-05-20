@@ -6,4 +6,5 @@ namespace MLANELib.WinML {
         LearningModel LearningModel { get; set; }
 
         LearningModelSession Session { get; set; }
-        LearningModelBin
+        LearningModelBinding Binding { get; set; }
+        Task<IMachineLearningOutput> EvaluateAsync(IMachineLearningInput input);
