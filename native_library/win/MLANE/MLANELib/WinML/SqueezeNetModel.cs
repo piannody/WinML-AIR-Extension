@@ -5,4 +5,5 @@ using System.Threading.Tasks;
 using Windows.AI.MachineLearning;
 
 namespace MLANELib.WinML {
-    pu
+    public class SqueezeNetModel : IMachineLearningModel {
+        private readonly List<string> _labels = new
