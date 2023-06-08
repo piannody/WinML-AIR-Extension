@@ -6,4 +6,6 @@ using Windows.AI.MachineLearning;
 
 namespace MLANELib.WinML {
     public class SqueezeNetModel : IMachineLearningModel {
-        private readonly List<string> _labels = new
+        private readonly List<string> _labels = new List<string>();
+        public LearningModel LearningModel { get; set; }
+        public LearningMo
