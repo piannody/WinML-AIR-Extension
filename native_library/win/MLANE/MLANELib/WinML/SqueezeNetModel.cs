@@ -8,4 +8,7 @@ namespace MLANELib.WinML {
     public class SqueezeNetModel : IMachineLearningModel {
         private readonly List<string> _labels = new List<string>();
         public LearningModel LearningModel { get; set; }
-        public LearningMo
+        public LearningModelSession Session { get; set; }
+        public LearningModelBinding Binding { get; set; }
+
+        private const string LabelsJson
