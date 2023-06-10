@@ -11,4 +11,4 @@ namespace MLANELib.WinML {
         public LearningModelSession Session { get; set; }
         public LearningModelBinding Binding { get; set; }
 
-        private const string LabelsJson = "{\"0\": \"tench, Tinca tinca\",\"1\": \"goldfish, Carassius auratus\",\"2\": \"great white shark, white shark
+        private const string LabelsJson = "{\"0\": \"tench, Tinca tinca\",\"1\": \"goldfish, Carassius auratus\",\"2\": \"great white shark, white shark, man-eater, man-eating shark, Carcharodon carcharias\",\"3\": \"tiger shark, Galeocerdo cuvieri\",\"4\": \"hamme
