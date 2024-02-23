@@ -22,4 +22,5 @@ namespace MLANELib.WinML {
 
         public async Task<IMachineLearningOutput> EvaluateAsync(IMachineLearningInput input) {
             if (input is SqueezeNetInput modelInput) Binding.Bind("data_0", modelInput.Image);
-            var results = await Sess
+            var results = await Session.EvaluateAsync(Binding, "0");
+            if (!(results.Outputs["softmaxout_1"] is TensorFloat resultTensor)
