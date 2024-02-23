@@ -20,4 +20,5 @@ namespace MLANELib.WinML {
             }
         }
 
-        pub
+        public async Task<IMachineLearningOutput> EvaluateAsync(IMachineLearningInput input) {
+            if (input is Sque
