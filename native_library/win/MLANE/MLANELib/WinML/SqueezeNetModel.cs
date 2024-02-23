@@ -15,4 +15,9 @@ namespace MLANELib.WinML {
 
         public SqueezeNetModel() {
             var fileDict = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<string, string>>(LabelsJson);
-   
+            foreach (var kvp in fileDict) {
+                _labels.Add(kvp.Value);
+            }
+        }
+
+        pub
