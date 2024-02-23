@@ -23,4 +23,6 @@ namespace MLANELib.WinML {
         public async Task<IMachineLearningOutput> EvaluateAsync(IMachineLearningInput input) {
             if (input is SqueezeNetInput modelInput) Binding.Bind("data_0", modelInput.Image);
             var results = await Session.EvaluateAsync(Binding, "0");
-            if (!(results.Outputs["softmaxout_1"] is TensorFloat resultTensor)
+            if (!(results.Outputs["softmaxout_1"] is TensorFloat resultTensor)) return null;
+            var resultVector = resultTensor.GetAsVectorView();
+            // Find the top 3 p
