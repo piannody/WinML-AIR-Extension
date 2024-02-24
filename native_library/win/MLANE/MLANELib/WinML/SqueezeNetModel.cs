@@ -29,4 +29,8 @@ namespace MLANELib.WinML {
             var indexedResults = resultVector.Select((t, i) => (index: i, probability: resultVector.ElementAt(i)))
                 .ToList();
             indexedResults.Sort((a, b) => {
-              
+                if (a.probability < b.probability) {
+                    return 1;
+                }
+
+                if (a.probabil
