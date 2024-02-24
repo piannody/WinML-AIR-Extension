@@ -26,4 +26,7 @@ namespace MLANELib.WinML {
             if (!(results.Outputs["softmaxout_1"] is TensorFloat resultTensor)) return null;
             var resultVector = resultTensor.GetAsVectorView();
             // Find the top 3 probabilities
-            var indexedResults = resultVector.Select((t, i) => (index: i, probability: resultVector.El
+            var indexedResults = resultVector.Select((t, i) => (index: i, probability: resultVector.ElementAt(i)))
+                .ToList();
+            indexedResults.Sort((a, b) => {
+              
