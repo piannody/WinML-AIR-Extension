@@ -33,4 +33,10 @@ namespace MLANELib.WinML {
                     return 1;
                 }
 
-                if (a.probabil
+                if (a.probability > b.probability) {
+                    return -1;
+                }
+
+                return 0;
+            });
+       
