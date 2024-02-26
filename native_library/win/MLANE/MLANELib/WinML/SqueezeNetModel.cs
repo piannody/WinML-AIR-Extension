@@ -44,4 +44,8 @@ namespace MLANELib.WinML {
                 ret.Add((_labels[indexedResults[i].index], indexedResults[i].probability));
             }
 
-            var output 
+            var output = new SqueezeNetOutput {classLabelProbs = ret};
+            return output;
+        }
+    }
+}
