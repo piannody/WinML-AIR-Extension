@@ -41,4 +41,7 @@ namespace MLANELib.WinML {
             });
             var ret = new List<(string label, float probability)>();
             for (var i = 0; i < 3; i++) {
-              
+                ret.Add((_labels[indexedResults[i].index], indexedResults[i].probability));
+            }
+
+            var output 
