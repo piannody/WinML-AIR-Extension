@@ -39,4 +39,6 @@ namespace MLANELib.WinML {
 
                 return 0;
             });
-       
+            var ret = new List<(string label, float probability)>();
+            for (var i = 0; i < 3; i++) {
+              
