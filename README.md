@@ -6,4 +6,11 @@ It also serves as a useful reference for how to call UWP APIs from a C# based AN
 
 ----------
 
-**Getting the Dependenc
+**Getting the Dependencies**
+
+Change directory into /example from the command line and run:
+````shell
+PS get_dependencies.ps1
+````
+
+**Import
