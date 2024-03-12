@@ -19,4 +19,4 @@ The C# binaries(dlls) are now packaged inside the ANE. All of them **need to be 
 
 FreSharp.ane is now a required dependency for Windows.
 
-This ANE was compiled using MS Visual Studio 2015. As such, your ma
+This ANE was compiled using MS Visual Studio 2015. As such, your machine (and user's machines) will need to have Microsoft Visual C++ 2015 Redistributable (x86) runtime insta
