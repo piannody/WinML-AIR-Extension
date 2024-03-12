@@ -30,4 +30,12 @@ This ANE also requires .NET 4.7 Framework. This is included with Windows 10 Apri
 
 You will need:
 
-- Windows 1
+- Windows 10 October Update 2018 (1809)
+- .NET 4.7
+- AIRSDK 32
+- Visual Studio 2017
+ 
+
+### References
+
+- [Windows UWP Machine Learning
