@@ -13,4 +13,6 @@ Change directory into /example from the command line and run:
 PS get_dependencies.ps1
 ````
 
-**Import
+**Important Notice for Windows Installation!**
+
+The C# binaries(dlls) are now packaged inside the ANE. All of them **need to be deleted** from your
