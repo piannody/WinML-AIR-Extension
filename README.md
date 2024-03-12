@@ -24,4 +24,10 @@ This ANE was compiled using MS Visual Studio 2015. As such, your machine (and us
 You can download it from here: https://www.microsoft.com/en-us/download/details.aspx?id=48145
 
 
-This ANE also requires .NE
+This ANE also requires .NET 4.7 Framework. This is included with Windows 10 April Update 2018.
+
+### Prerequisites
+
+You will need:
+
+- Windows 1
