@@ -15,4 +15,8 @@ PS get_dependencies.ps1
 
 **Important Notice for Windows Installation!**
 
-The C# binaries(dlls) are now packaged inside the ANE. All of them **need to be deleted** from your
+The C# binaries(dlls) are now packaged inside the ANE. All of them **need to be deleted** from your AIRSDK.
+
+FreSharp.ane is now a required dependency for Windows.
+
+This ANE was compiled using MS Visual Studio 2015. As such, your ma
