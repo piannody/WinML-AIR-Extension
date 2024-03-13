@@ -39,4 +39,4 @@ You will need:
 ### References
 
 - [Windows UWP Machine Learning](https://docs.microsoft.com/en-gb/windows/uwp/machine-learning/)
-- [How to call Windows 10 APIs in a deskto
+- [How to call Windows 10 APIs in a desktop application](https://blogs.windows.com/buildingapps/2017/01/25/calling-windows-10-apis-desktop-application/#3h4lsKlIalPxRWet
