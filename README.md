@@ -38,4 +38,5 @@ You will need:
 
 ### References
 
-- [Windows UWP Machine Learning
+- [Windows UWP Machine Learning](https://docs.microsoft.com/en-gb/windows/uwp/machine-learning/)
+- [How to call Windows 10 APIs in a deskto
